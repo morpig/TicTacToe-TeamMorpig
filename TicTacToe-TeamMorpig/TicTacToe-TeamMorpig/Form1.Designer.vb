@@ -50,7 +50,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(329, 189)
+        Me.Label4.Location = New System.Drawing.Point(332, 189)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(163, 26)
         Me.Label4.TabIndex = 31
@@ -60,7 +60,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(331, 125)
+        Me.Label3.Location = New System.Drawing.Point(334, 125)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(243, 26)
         Me.Label3.TabIndex = 30
@@ -70,7 +70,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(331, 54)
+        Me.Label2.Location = New System.Drawing.Point(334, 54)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(243, 26)
         Me.Label2.TabIndex = 29
@@ -102,7 +102,7 @@ Partial Class Form1
         'Button12
         '
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(334, 261)
+        Me.Button12.Location = New System.Drawing.Point(337, 261)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(128, 62)
         Me.Button12.TabIndex = 32
@@ -112,7 +112,7 @@ Partial Class Form1
         'Button11
         '
         Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(5, 261)
+        Me.Button11.Location = New System.Drawing.Point(8, 261)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(137, 62)
         Me.Button11.TabIndex = 27
@@ -124,7 +124,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label1.Location = New System.Drawing.Point(5, 333)
+        Me.Label1.Location = New System.Drawing.Point(8, 333)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 20)
         Me.Label1.TabIndex = 26
@@ -134,7 +134,7 @@ Partial Class Form1
         'Button10
         '
         Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(159, 261)
+        Me.Button10.Location = New System.Drawing.Point(162, 261)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(137, 62)
         Me.Button10.TabIndex = 25
@@ -144,7 +144,7 @@ Partial Class Form1
         'Button9
         '
         Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(200, 170)
+        Me.Button9.Location = New System.Drawing.Point(203, 170)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 62)
         Me.Button9.TabIndex = 24
@@ -153,7 +153,7 @@ Partial Class Form1
         'Button8
         '
         Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(100, 170)
+        Me.Button8.Location = New System.Drawing.Point(103, 170)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 62)
         Me.Button8.TabIndex = 23
@@ -162,7 +162,7 @@ Partial Class Form1
         'Button7
         '
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(5, 170)
+        Me.Button7.Location = New System.Drawing.Point(8, 170)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 62)
         Me.Button7.TabIndex = 22
@@ -171,7 +171,7 @@ Partial Class Form1
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(200, 97)
+        Me.Button6.Location = New System.Drawing.Point(203, 97)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 62)
         Me.Button6.TabIndex = 21
@@ -180,7 +180,7 @@ Partial Class Form1
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(100, 97)
+        Me.Button5.Location = New System.Drawing.Point(103, 97)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 62)
         Me.Button5.TabIndex = 20
@@ -189,7 +189,7 @@ Partial Class Form1
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(5, 97)
+        Me.Button4.Location = New System.Drawing.Point(8, 97)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 62)
         Me.Button4.TabIndex = 19
@@ -198,7 +198,7 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(200, 26)
+        Me.Button3.Location = New System.Drawing.Point(203, 26)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 62)
         Me.Button3.TabIndex = 18
@@ -207,7 +207,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(100, 26)
+        Me.Button2.Location = New System.Drawing.Point(103, 26)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 62)
         Me.Button2.TabIndex = 17
@@ -216,7 +216,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(5, 26)
+        Me.Button1.Location = New System.Drawing.Point(8, 26)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 62)
         Me.Button1.TabIndex = 16
@@ -227,7 +227,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(316, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(305, 24)
         Me.MenuStrip1.TabIndex = 28
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -235,7 +235,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(316, 352)
+        Me.ClientSize = New System.Drawing.Size(305, 352)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
