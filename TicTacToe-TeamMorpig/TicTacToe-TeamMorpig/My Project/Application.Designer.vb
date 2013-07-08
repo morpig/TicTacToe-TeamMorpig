@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.TicTacToe_TeamMorpig.SplashScreen1
+            Me.MainForm = Global.TicTacToe_TeamMorpig.Form3
         End Sub
     End Class
 End Namespace
