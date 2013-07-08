@@ -38,18 +38,34 @@ Public Class Form3
         Dim dr As MySqlDataReader
         Dim SQLstr As String
 
+        TextBox1.Visible = False
+        TextBox2.Visible = False
+        Button1.Visible = False
+        Button2.Visible = False
+        Label2.Text = "Logging In, Please wait"
+
         cn.ConnectionString = "Server = db4free.net; user id = morpig; password = Dito2002; database = tictactoe"
         cmd.Connection = cn
         cn.Open()
         SQLstr = "SELECT * from user WHERE username = '" & TextBox1.Text & "' and password = '" & TextBox2.Text & "';"
-        MsgBox(SQLstr)
+        'MsgBox(SQLstr)
         cmd.CommandText = SQLstr
         dr = cmd.ExecuteReader
 
         If dr.HasRows Then
-            Form2.Show()
+            SplashScreen1.Show()
+            Me.Hide()
+
         Else
-            MsgBox("ERROR!")
+
+            Label2.Text = "Login Failed, please try again."
+            Application.DoEvents()
+            System.Threading.Thread.Sleep(2500)
+            TextBox1.Visible = True
+            TextBox2.Visible = True
+            Button1.Visible = True
+            Button2.Visible = True
+            Label2.Text = ""
         End If
     End Sub
     Private Sub testconnection()
@@ -72,6 +88,10 @@ Public Class Form3
             MsgBox(ex.Message)
 
         End Try
+
+    End Sub
+
+    Private Sub Form3_Load_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

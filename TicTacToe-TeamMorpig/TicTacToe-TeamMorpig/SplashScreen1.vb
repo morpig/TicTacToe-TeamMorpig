@@ -42,7 +42,12 @@
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Form2.Show()
+        Form3.Hide()
         Me.Hide()
+
+    End Sub
+
+    Private Sub AxWindowsMediaPlayer1_Enter_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AxWindowsMediaPlayer1.Enter
 
     End Sub
 End Class
