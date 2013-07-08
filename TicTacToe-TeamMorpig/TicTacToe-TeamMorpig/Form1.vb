@@ -406,6 +406,7 @@
         Label2.Text = random
 
         CheckWin()
+        Button11.Enabled = True
         'CheckIfComputerWins()
     End Sub
 
@@ -540,11 +541,51 @@
             NoOfWin1 += 1
             Button11.Enabled = True
             isX = False
+            Button1.Text = ""
+            Button1.Enabled = True
+            Button2.Text = ""
+            Button2.Enabled = True
+            Button3.Text = ""
+            Button3.Enabled = True
+            Button4.Text = ""
+            Button4.Enabled = True
+            Button5.Text = ""
+            Button5.Enabled = True
+            Button6.Text = ""
+            Button6.Enabled = True
+            Button7.Text = ""
+            Button7.Enabled = True
+            Button8.Text = ""
+            Button8.Enabled = True
+            Button9.Text = ""
+            Button9.Enabled = True
+            Button10.Enabled = True
+            Timer1.Start()
         ElseIf b1.Text = "X" And b2.Text = "X" And b3.Text = "X" Then
             MsgBox("Player 2 Won This Game Congratz")
             NoOfWin2 += 1
             isX = False
             Button11.Enabled = True
+            Button1.Text = ""
+            Button1.Enabled = True
+            Button2.Text = ""
+            Button2.Enabled = True
+            Button3.Text = ""
+            Button3.Enabled = True
+            Button4.Text = ""
+            Button4.Enabled = True
+            Button5.Text = ""
+            Button5.Enabled = True
+            Button6.Text = ""
+            Button6.Enabled = True
+            Button7.Text = ""
+            Button7.Enabled = True
+            Button8.Text = ""
+            Button8.Enabled = True
+            Button9.Text = ""
+            Button9.Enabled = True
+            Button10.Enabled = True
+            Timer1.Start()
         End If
     End Sub
     Private Sub CheckDraw()
