@@ -591,7 +591,7 @@
     Private Sub CheckDraw()
         If Button1.Text <> Nothing And Button2.Text <> Nothing And Button3.Text <> Nothing And Button4.Text <> Nothing And Button5.Text <> Nothing And Button6.Text <> Nothing And Button7.Text <> Nothing And Button8.Text <> Nothing And Button9.Text <> Nothing Then
             Draw += 1
-            MessageBox.Show("This Game Ended As Draw", "Draw")
+            MessageBox.Show("This Game Ended As Draw")
             Button11.Enabled = True
         End If
     End Sub
