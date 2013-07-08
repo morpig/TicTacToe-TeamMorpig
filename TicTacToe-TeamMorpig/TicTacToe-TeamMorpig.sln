@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TicTacToe-TeamMorpig", "TicTacToe-TeamMorpig\TicTacToe-TeamMorpig.vbproj", "{F1A22FC3-46D3-4CF6-8689-5F31B8CF5033}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TicTacToe-TeamMorpig", "TicTacToe-TeamMorpig\TicTacToe-TeamMorpig.vbproj", "{A7CCCE37-66EB-4998-B13A-E723282E0D6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F1A22FC3-46D3-4CF6-8689-5F31B8CF5033}.Debug|x86.ActiveCfg = Debug|x86
-		{F1A22FC3-46D3-4CF6-8689-5F31B8CF5033}.Debug|x86.Build.0 = Debug|x86
-		{F1A22FC3-46D3-4CF6-8689-5F31B8CF5033}.Release|x86.ActiveCfg = Release|x86
-		{F1A22FC3-46D3-4CF6-8689-5F31B8CF5033}.Release|x86.Build.0 = Release|x86
+		{A7CCCE37-66EB-4998-B13A-E723282E0D6F}.Debug|x86.ActiveCfg = Debug|x86
+		{A7CCCE37-66EB-4998-B13A-E723282E0D6F}.Debug|x86.Build.0 = Debug|x86
+		{A7CCCE37-66EB-4998-B13A-E723282E0D6F}.Release|x86.ActiveCfg = Release|x86
+		{A7CCCE37-66EB-4998-B13A-E723282E0D6F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

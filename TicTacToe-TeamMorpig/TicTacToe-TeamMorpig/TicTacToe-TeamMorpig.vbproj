@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F1A22FC3-46D3-4CF6-8689-5F31B8CF5033}</ProjectGuid>
+    <ProjectGuid>{A7CCCE37-66EB-4998-B13A-E723282E0D6F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>TicTacToe_TeamMorpig.My.MyApplication</StartupObject>
     <RootNamespace>TicTacToe_TeamMorpig</RootNamespace>
