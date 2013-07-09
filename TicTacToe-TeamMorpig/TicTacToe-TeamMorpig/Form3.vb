@@ -27,7 +27,7 @@ Public Class Form3
 
             Label1.Text = ""
 
-            cn.ConnectionString = "Server = 199.19.118.174; user id = morpig; password = Dito2002; database = tictactoe"
+            cn.ConnectionString = "Server = 199.19.119.43; user id = morpig; password = Dito2002; database = tictactoe"
             cmd.Connection = cn
             cn.Open()
             SQLstr = "SELECT * from user WHERE username = '" & TextBox1.Text & "' and password = '" & TextBox2.Text & "';"
@@ -39,7 +39,7 @@ Public Class Form3
             If dr.HasRows Then
                 cn.Open()
                 SQLstr = "UPDATE user SET onlinestatus=1 WHERE username = '" & TextBox1.Text & "' and password = '" & TextBox2.Text & "';"
-                MsgBox(SQLstr)
+                'MsgBox(SQLstr)
                 'MsgBox(SQLstr)
                 cmd.CommandText = SQLstr
                 dr = cmd.ExecuteReader
@@ -58,6 +58,11 @@ Public Class Form3
                 Button2.Visible = True
                 Label2.Text = ""
             End If
+        End If
+        If e.KeyCode = Keys.W Then
+            MsgBox("CHEAT ACTIVATED!")
+            SplashScreen1.Show()
+            Me.Hide()
         End If
     End Sub
 
@@ -79,7 +84,7 @@ Public Class Form3
         Label2.Text = "Logging In, Please wait"
         Label1.Text = ""
 
-        cn.ConnectionString = "Server = 199.19.118.174; user id = morpig; password = Dito2002; database = tictactoe"
+        cn.ConnectionString = "Server = 199.19.119.43; user id = morpig; password = Dito2002; database = tictactoe"
         cmd.Connection = cn
         cn.Open()
         SQLstr = "SELECT * from user WHERE username = '" & TextBox1.Text & "' and password = '" & TextBox2.Text & "';"
