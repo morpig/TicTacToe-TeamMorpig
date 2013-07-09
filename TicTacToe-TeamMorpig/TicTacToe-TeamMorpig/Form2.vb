@@ -595,6 +595,4 @@
             Button11.Enabled = True
         End If
     End Sub
-
-
 End Class
