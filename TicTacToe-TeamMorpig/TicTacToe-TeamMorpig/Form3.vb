@@ -8,23 +8,22 @@ Public Class Form3
     End Sub
 
     Private Sub Form3_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        MsgBox("Checking update and establish connection with Database. Please Wait")
         Try
-
+            MsgBox("Checking update and establish connection with Database. Please Wait")
             Dim username As String = TextBox1.Text
             Dim pwd As String = TextBox2.Text
 
-            Dim ConStr As String = "Database=tictactoe;" & _
-               "Data Source=db4free.net;" & _
-               "User Id=morpig;Password=Dito2002"
+            Dim ConStr As String = "Server = 199.19.118.174; user id = morpig; password = Dito2002; database = tictactoe"
             Dim connection As New MySqlConnection(ConStr)
             connection.Open()
             connection.Close()
-
+            MsgBox("Checking update and establish connection with Database. Please Wait")
             Label1.Text = "Online, No Problems detected."
+            MsgBox(ConStr)
 
         Catch ex As Exception
-
-            MsgBox(ex.Message)
+            Label1.Text = "Offline, please try again later."
 
         End Try
 
@@ -44,7 +43,7 @@ Public Class Form3
         Button2.Visible = False
         Label2.Text = "Logging In, Please wait"
 
-        cn.ConnectionString = "Server = db4free.net; user id = morpig; password = Dito2002; database = tictactoe"
+        cn.ConnectionString = "Server = 199.19.118.174; user id = morpig; password = Dito2002; database = tictactoe"
         cmd.Connection = cn
         cn.Open()
         SQLstr = "SELECT * from user WHERE username = '" & TextBox1.Text & "' and password = '" & TextBox2.Text & "';"
@@ -54,7 +53,7 @@ Public Class Form3
 
         If dr.HasRows Then
             SplashScreen1.Show()
-            Me.Hide()
+            Me.hide
 
         Else
 
@@ -92,6 +91,30 @@ Public Class Form3
     End Sub
 
     Private Sub Form3_Load_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Try
+            MsgBox("Checking update and establish connection with Database. Please Wait")
+            'Dim username As String = TextBox1.Text
+            'Dim pwd As String = TextBox2.Text
+
+            'Dim ConStr As String = "Server = 199.19.118.174; user id = morpig; password = Dito2002; database = tictactoe"
+            Me.Show()
+            'Dim connection As New MySqlConnection(ConStr)
+            'connection.Open()
+            'connection.Close()
+            'Me.Show()
+            Label1.Text = "Online, No Problems detected."
+            'MsgBox(ConStr)
+
+        Catch ex As Exception
+
+            MsgBox(ex.Message)
+
+        End Try
+
+
+    End Sub
+
+    Private Sub WebBrowser1_DocumentCompleted(ByVal sender As System.Object, ByVal e As System.Windows.Forms.WebBrowserDocumentCompletedEventArgs)
 
     End Sub
 End Class
