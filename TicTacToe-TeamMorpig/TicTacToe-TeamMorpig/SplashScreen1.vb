@@ -41,8 +41,8 @@
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        Form4.Show()
-        Me.Close()
+        Form3.Show()
+        Me.Hide()
 
     End Sub
 End Class
