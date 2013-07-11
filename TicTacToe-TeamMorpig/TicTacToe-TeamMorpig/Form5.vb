@@ -23,6 +23,10 @@ Public Class Form5
         Label3.Hide()
         Label4.Hide()
         Button2.Hide()
+        Label5.Hide()
+        Label6.Hide()
+        Label7.Hide()
+        'Button2.Hide()
     End Sub
     Private Sub BackgroundWorker1_DoWork(ByVal sender As System.Object, ByVal e As System.ComponentModel.DoWorkEventArgs) Handles BackgroundWorker1.DoWork
         For i = 0 To 100
@@ -46,18 +50,18 @@ Public Class Form5
                 cmd.CommandText = SQLstr
                 dr = cmd.ExecuteReader
                 dr.Read()
-                Label4.Text = (dr.GetChar(0) & "/25")
+                Label4.Text = (dr.GetChar(0) & "/5")
                 cn.Close()
                 Label2.Show()
                 Label3.Show()
                 Label4.Show()
-                BackgroundWorker2.RunWorkerAsync()
+                ''BackgroundWorker2.RunWorkerAsync()
             Else
                 Label1.Text = "Server 1 is off, still fetching other data."
 
                 Application.DoEvents()
                 System.Threading.Thread.Sleep(2500)
-                BackgroundWorker2.RunWorkerAsync()
+                'BackgroundWorker2.RunWorkerAsync()
             End If
 
         Next
@@ -81,7 +85,7 @@ Public Class Form5
 
     Private Sub BackgroundWorker2_DoWork(ByVal sender As Object, ByVal e As System.ComponentModel.DoWorkEventArgs) Handles BackgroundWorker2.DoWork
         For i = 0 To 100
-            Timer1.Start()
+            Timer2.Start()
             Dim cn As New MySqlConnection
             Dim cmd As New MySqlCommand
             Dim dr As MySqlDataReader
@@ -101,13 +105,13 @@ Public Class Form5
                 cmd.CommandText = SQLstr
                 dr = cmd.ExecuteReader
                 dr.Read()
-                Label4.Text = (dr.GetChar(0) & "/25")
+                Label5.Text = (dr.GetChar(0) & "/5")
                 cn.Close()
-                Label2.Show()
-                Label3.Show()
-                Label4.Show()
+                Label5.Show()
+                Label6.Show()
+                Label7.Show()
             Else
-                Label1.Text = "Server 1 is off, still fetching other data."
+                Label1.Text = "Server 2 is off, still fetching other data."
 
                 Application.DoEvents()
                 System.Threading.Thread.Sleep(2500)
@@ -124,6 +128,6 @@ Public Class Form5
         Label5.Hide()
         Label6.Hide()
         Label7.Hide()
-        Button2.Hide()
+        'Button2.Hide()
     End Sub
 End Class

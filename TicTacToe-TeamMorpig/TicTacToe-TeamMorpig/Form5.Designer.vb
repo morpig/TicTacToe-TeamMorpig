@@ -149,7 +149,7 @@ Partial Class Form5
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(93, 25)
         Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Server 1"
+        Me.Label6.Text = "Server 2"
         '
         'Label7
         '
