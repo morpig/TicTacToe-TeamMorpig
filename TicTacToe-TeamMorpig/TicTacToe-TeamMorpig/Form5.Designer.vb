@@ -33,6 +33,11 @@ Partial Class Form5
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Button1
@@ -69,7 +74,7 @@ Partial Class Form5
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(318, 61)
+        Me.Label2.Location = New System.Drawing.Point(394, 61)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(74, 25)
         Me.Label2.TabIndex = 3
@@ -121,11 +126,53 @@ Partial Class Form5
         Me.Button3.Text = "Refresh List"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'BackgroundWorker2
+        '
+        Me.BackgroundWorker2.WorkerReportsProgress = True
+        Me.BackgroundWorker2.WorkerSupportsCancellation = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(146, 168)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(90, 25)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Players:"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(7, 168)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(93, 25)
+        Me.Label6.TabIndex = 9
+        Me.Label6.Text = "Server 1"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(394, 168)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(74, 25)
+        Me.Label7.TabIndex = 8
+        Me.Label7.Text = "Online"
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 1200
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(827, 388)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label4)
@@ -151,4 +198,9 @@ Partial Class Form5
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
 End Class
