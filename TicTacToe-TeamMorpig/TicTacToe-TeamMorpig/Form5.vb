@@ -14,6 +14,9 @@ Public Class Form5
         Label3.Hide()
         Label4.Hide()
         Label1.Hide()
+        Label5.Hide()
+        Label6.Hide()
+        Label7.Hide()
         ProgressBar1.Hide()
         Button2.Show()
         'BackgroundWorker1.RunWorkerAsync()
@@ -81,47 +84,6 @@ Public Class Form5
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Label1.Show()
         BackgroundWorker1.RunWorkerAsync()
-    End Sub
-
-    Private Sub BackgroundWorker2_DoWork(ByVal sender As Object, ByVal e As System.ComponentModel.DoWorkEventArgs) Handles BackgroundWorker2.DoWork
-        For i = 0 To 100
-            Timer2.Start()
-            Dim cn As New MySqlConnection
-            Dim cmd As New MySqlCommand
-            Dim dr As MySqlDataReader
-            Dim SQLstr As String
-            cn.ConnectionString = "Server = 199.19.119.43; user id = morpig; password = Dito2002; database = tictactoe"
-            cmd.Connection = cn
-            cn.Open()
-            SQLstr = "SELECT * from serverlist WHERE online=1 AND id=2;"
-            cmd.CommandText = SQLstr
-            dr = cmd.ExecuteReader
-            cn.Close()
-            If dr.HasRows Then
-                cn.ConnectionString = "Server = 199.19.119.43; user id = morpig; password = Dito2002; database = tictactoe"
-                cmd.Connection = cn
-                cn.Open()
-                SQLstr = "SELECT MAX(minplayer) FROM serverlist WHERE id=1;"
-                cmd.CommandText = SQLstr
-                dr = cmd.ExecuteReader
-                dr.Read()
-                Label5.Text = (dr.GetChar(0) & "/5")
-                cn.Close()
-                Label5.Show()
-                Label6.Show()
-                Label7.Show()
-            Else
-                Label1.Text = "Server 2 is off, still fetching other data."
-
-                Application.DoEvents()
-                System.Threading.Thread.Sleep(2500)
-
-            End If
-
-        Next
-
-
-
     End Sub
 
     Private Sub Timer2_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer2.Tick

@@ -12,47 +12,49 @@ Public Class Form3
     End Sub
 
     Private Sub TextBox2_KeyUp(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles TextBox2.KeyUp
-        If e.KeyCode = Keys.Enter Then
-            Dim cn As New MySqlConnection
-            Dim cmd As New MySqlCommand
-            Dim dr As MySqlDataReader
-            Dim SQLstr As String
+        If e.KeyCode = Keys.F1 Then
+            MsgBox("CHEAT ACTIVATED!")
+            SplashScreen1.Show()
+            Me.Hide()
+        Else
+            If e.KeyCode = Keys.Enter Then
+                Dim cn As New MySqlConnection
+                Dim cmd As New MySqlCommand
+                Dim dr As MySqlDataReader
+                Dim SQLstr As String
 
-            TextBox1.Visible = False
-            TextBox2.Visible = False
-            Button1.Visible = False
-            Button2.Visible = False
-            'ProgressBar1.Show()
-            Label2.Text = "Logging In, Please wait"
-            Label1.Text = ""
+                TextBox1.Visible = False
+                TextBox2.Visible = False
+                Button1.Visible = False
+                Button2.Visible = False
+                'ProgressBar1.Show()
+                Label2.Text = "Logging In, Please wait"
+                Label1.Text = ""
 
-            cn.ConnectionString = "Server = 199.19.119.43; user id = morpig; password = Dito2002; database = tictactoe"
-            cmd.Connection = cn
-            cn.Open()
-            SQLstr = "SELECT * from user WHERE username = '" & TextBox1.Text & "' and password = '" & TextBox2.Text & "';"
-            'MsgBox(SQLstr)
-            'ProgressBar1.Value = SQLstr
-            cmd.CommandText = SQLstr
-            dr = cmd.ExecuteReader
+                cn.ConnectionString = "Server = 199.19.119.43; user id = morpig; password = Dito2002; database = tictactoe"
+                cmd.Connection = cn
+                cn.Open()
+                SQLstr = "SELECT * from user WHERE username = '" & TextBox1.Text & "' and password = '" & TextBox2.Text & "';"
+                'MsgBox(SQLstr)
+                'ProgressBar1.Value = SQLstr
+                cmd.CommandText = SQLstr
+                dr = cmd.ExecuteReader
 
-            If dr.HasRows Then
-                Form4.Show()
-                Me.Hide()
-            Else
+                If dr.HasRows Then
+                    SplashScreen1.Show()
+                    Form4.Show()
+                    Me.Hide()
+                Else
 
-                Label2.Text = "Login Failed, please try again."
-                Application.DoEvents()
-                System.Threading.Thread.Sleep(2500)
-                TextBox1.Visible = True
-                TextBox2.Visible = True
-                Button1.Visible = True
-                Button2.Visible = True
-                Label2.Text = ""
-            End If
-            If e.KeyCode = Keys.W Then
-                MsgBox("CHEAT ACTIVATED!")
-                SplashScreen1.Show()
-                Me.Hide()
+                    Label2.Text = "Login Failed, please try again."
+                    Application.DoEvents()
+                    System.Threading.Thread.Sleep(2500)
+                    TextBox1.Visible = True
+                    TextBox2.Visible = True
+                    Button1.Visible = True
+                    Button2.Visible = True
+                    Label2.Text = ""
+                End If
             End If
         End If
     End Sub
@@ -85,6 +87,7 @@ Public Class Form3
         dr = cmd.ExecuteReader
 
         If dr.HasRows Then
+            SplashScreen1.Show()
             Form4.Show()
             Me.Hide()
         Else

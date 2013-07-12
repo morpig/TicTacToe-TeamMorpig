@@ -6,7 +6,7 @@
 
     Private Sub SplashScreen1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Timer1.Start()
-        AxWindowsMediaPlayer1.URL = "C:/Users/Swindya/Downloads/IntroTeamMorpig.mp4"
+        AxWindowsMediaPlayer1.URL = "graphics/IntroTeamMorpig.mp4"
         AxWindowsMediaPlayer1.Show()
 
         'Set up the dialog text at runtime according to the application's assembly information.  
@@ -41,8 +41,12 @@
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        Form3.Show()
+        Form4.Show()
         Me.Hide()
+
+    End Sub
+
+    Private Sub AxWindowsMediaPlayer1_Enter_1(sender As Object, e As EventArgs) Handles AxWindowsMediaPlayer1.Enter
 
     End Sub
 End Class

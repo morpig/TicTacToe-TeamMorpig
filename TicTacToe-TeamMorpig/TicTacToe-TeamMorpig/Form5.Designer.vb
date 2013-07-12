@@ -102,7 +102,7 @@ Partial Class Form5
         '
         'Timer1
         '
-        Me.Timer1.Interval = 1200
+        Me.Timer1.Interval = 2500
         '
         'BackgroundWorker1
         '
